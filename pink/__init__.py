@@ -18,7 +18,7 @@ from .tasks import (
 )
 from .utils import custom_configuration_vector
 
-__version__ = "4.3.0"
+__version__ = "4.4.0"
 
 __all__ = [
     "Configuration",

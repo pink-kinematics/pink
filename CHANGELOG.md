@@ -7,9 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [4.4.0] - 2026-09-09
+
 ### Added
 
 - Limit: Allow custom boundaries in `VelocityLimit`
+- docs: Document assumption that we start from a feasible configuration
 
 ## [4.3.0] - 2026-07-15
 
@@ -482,7 +485,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Python package infrastructure
 
-[unreleased]: https://github.com/stephane-caron/pink/compare/v4.3.0...HEAD
+[unreleased]: https://github.com/stephane-caron/pink/compare/v4.4.0...HEAD
+[4.4.0]: https://github.com/stephane-caron/pink/releases/tag/v4.4.0
 [4.3.0]: https://github.com/stephane-caron/pink/releases/tag/v4.3.0
 [4.2.0]: https://github.com/stephane-caron/pink/releases/tag/v4.2.0
 [4.1.0]: https://github.com/stephane-caron/pink/releases/tag/v4.1.0

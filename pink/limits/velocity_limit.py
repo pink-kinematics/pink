@@ -48,8 +48,9 @@ class VelocityLimit(Limit):
             velocity_limit: Optional vector of velocity limits, of dimension
                 ``model.nv``. When ``None`` (the default), limits are read
                 from the model (``model.velocityLimit``). When given, it
-                takes precedence over the model's, which is how joints that
-                carry no model limit — e.g. continuous joints — get bounded.
+                takes precedence over the model's. This allows us to bound
+                joints that cannot have a limit from their URDF model, such as
+                continuous joints.
         """
         if velocity_limit is None:
             velocity_limit = model.velocityLimit
