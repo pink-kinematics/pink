@@ -1,4 +1,4 @@
-:github_url: https://github.com/stephane-caron/pink/tree/main/doc/installation.rst
+:github_url: https://github.com/pink-kinematics/pink/tree/main/doc/installation.rst
 
 ************
 Installation

@@ -1,8 +1,8 @@
 # Pink
 
-[![Build](https://img.shields.io/github/actions/workflow/status/stephane-caron/pink/ci.yml?branch=main)](https://github.com/stephane-caron/pink/actions)
-[![Documentation](https://img.shields.io/github/actions/workflow/status/stephane-caron/pink/docs.yml?branch=main&label=docs)](https://stephane-caron.github.io/pink/)
-[![Coverage](https://coveralls.io/repos/github/stephane-caron/pink/badge.svg?branch=main)](https://coveralls.io/github/stephane-caron/pink?branch=main)
+[![Build](https://img.shields.io/github/actions/workflow/status/pink-kinematics/pink/ci.yml?branch=main)](https://github.com/pink-kinematics/pink/actions)
+[![Documentation](https://img.shields.io/github/actions/workflow/status/pink-kinematics/pink/docs.yml?branch=main&label=docs)](https://pink-kinematics.github.io/pink/)
+[![Coverage](https://coveralls.io/repos/github/pink-kinematics/pink/badge.svg?branch=main)](https://coveralls.io/github/pink-kinematics/pink?branch=main)
 [![Conda version](https://anaconda.org/conda-forge/pink/badges/version.svg)](https://anaconda.org/conda-forge/pink)
 [![PyPI version](https://img.shields.io/pypi/v/pin-pink)](https://pypi.org/project/pin-pink/)
 [![PyPI downloads](https://img.shields.io/pypi/dm/pin-pink?color=blue)](https://pypistats.org/packages/pin-pink)
@@ -120,7 +120,7 @@ for t in np.arange(0.0, 42.0, dt):
     time.sleep(dt)
 ```
 
-If task targets are continuously updated, there will be no stationary solution to converge to, but the model will keep on tracking each target at best. Note that [`solve_ik`](https://stephane-caron.github.io/pink/inverse-kinematics.html#pink.solve_ik.solve_ik) will take care of both configuration and velocity limits read from the robot model.
+If task targets are continuously updated, there will be no stationary solution to converge to, but the model will keep on tracking each target at best. Note that [`solve_ik`](https://pink-kinematics.github.io/pink/inverse-kinematics.html#pink.solve_ik.solve_ik) will take care of both configuration and velocity limits read from the robot model.
 
 ### Floating-base velocity limits
 
@@ -145,39 +145,39 @@ Pass ``base_frame=None`` to let Pink pick the frame attached to ``root_joint`` a
 
 Illustrated examples showcase how Pink performs on various robot morphologies:
 
-- Arm: [UR5](https://github.com/stephane-caron/pink/tree/main/examples#arm-ur5) and [UR5 with end-effector limits](https://github.com/stephane-caron/pink/tree/main/examples/barriers#arm-ur5)
-- Arm: [Panda](https://github.com/stephane-caron/pink/tree/main/examples#arm-panda)
-- Dual arms: [Flying dual-arm UR3](https://github.com/stephane-caron/pink/tree/main/examples#flying-dual-arm-ur3)
-- Dual arms: [Yumi with spherical self-collision avoidance](https://github.com/stephane-caron/pink/tree/main/examples/barriers#yumi-end-effector-self-collision-avoidance)
-- Dual arms: [Iiwa with whole-body self-collision avoidance](https://github.com/stephane-caron/pink/tree/main/examples/barriers#iiwa-whole-body-collision-avoidance)
-- Humanoid: [Draco 3](https://github.com/stephane-caron/pink/tree/main/examples#humanoid-draco-3)
-- Mobile base: [Stretch R1](https://github.com/stephane-caron/pink/tree/main/examples#mobile-stretch)
-- Quadruped: [Go2 squatting with floating-base limits](https://github.com/stephane-caron/pink/tree/main/examples/barriers#go2-squat)
-- Floating base: [Clamp free-flyer velocities](https://github.com/stephane-caron/pink/blob/main/examples/floating_base_velocity_limit.py)
-- Wheeled biped: [Upkie rolling without slipping](https://github.com/stephane-caron/pink/tree/main/examples#wheeled-biped-upkie)
+- Arm: [UR5](https://github.com/pink-kinematics/pink/tree/main/examples#arm-ur5) and [UR5 with end-effector limits](https://github.com/pink-kinematics/pink/tree/main/examples/barriers#arm-ur5)
+- Arm: [Panda](https://github.com/pink-kinematics/pink/tree/main/examples#arm-panda)
+- Dual arms: [Flying dual-arm UR3](https://github.com/pink-kinematics/pink/tree/main/examples#flying-dual-arm-ur3)
+- Dual arms: [Yumi with spherical self-collision avoidance](https://github.com/pink-kinematics/pink/tree/main/examples/barriers#yumi-end-effector-self-collision-avoidance)
+- Dual arms: [Iiwa with whole-body self-collision avoidance](https://github.com/pink-kinematics/pink/tree/main/examples/barriers#iiwa-whole-body-collision-avoidance)
+- Humanoid: [Draco 3](https://github.com/pink-kinematics/pink/tree/main/examples#humanoid-draco-3)
+- Mobile base: [Stretch R1](https://github.com/pink-kinematics/pink/tree/main/examples#mobile-stretch)
+- Quadruped: [Go2 squatting with floating-base limits](https://github.com/pink-kinematics/pink/tree/main/examples/barriers#go2-squat)
+- Floating base: [Clamp free-flyer velocities](https://github.com/pink-kinematics/pink/blob/main/examples/floating_base_velocity_limit.py)
+- Wheeled biped: [Upkie rolling without slipping](https://github.com/pink-kinematics/pink/tree/main/examples#wheeled-biped-upkie)
 
 There are also more basic examples to get started:
 
-- [Double pendulum](https://github.com/stephane-caron/pink/blob/main/examples/double_pendulum.py)
-- [Loading a custom URDF](https://github.com/stephane-caron/pink/blob/main/examples/load_custom_urdf.py)
-- [Visualization in MeshCat](https://github.com/stephane-caron/pink/blob/main/examples/visualize_in_meshcat.py)
-- [Visualization in yourdfpy](https://github.com/stephane-caron/pink/blob/main/examples/visualize_in_yourdfpy.py)
+- [Double pendulum](https://github.com/pink-kinematics/pink/blob/main/examples/double_pendulum.py)
+- [Loading a custom URDF](https://github.com/pink-kinematics/pink/blob/main/examples/load_custom_urdf.py)
+- [Visualization in MeshCat](https://github.com/pink-kinematics/pink/blob/main/examples/visualize_in_meshcat.py)
+- [Visualization in yourdfpy](https://github.com/pink-kinematics/pink/blob/main/examples/visualize_in_yourdfpy.py)
 
-Check out the [examples](https://github.com/stephane-caron/pink/tree/main/examples) directory for more.
+Check out the [examples](https://github.com/pink-kinematics/pink/tree/main/examples) directory for more.
 
 ## Frequently Asked Questions
 
-- [Can I solve **global** inverse kinematics?](https://github.com/stephane-caron/pink/discussions/66#discussioncomment-8224315)
-- [Can I make velocities smoother?](https://github.com/stephane-caron/pink/discussions/103)
-- [My configuration gets stuck somewhere and does not solve the task, what is going on?](https://github.com/stephane-caron/pink/discussions/66#discussioncomment-8224315)
+- [Can I solve **global** inverse kinematics?](https://github.com/pink-kinematics/pink/discussions/66#discussioncomment-8224315)
+- [Can I make velocities smoother?](https://github.com/pink-kinematics/pink/discussions/103)
+- [My configuration gets stuck somewhere and does not solve the task, what is going on?](https://github.com/pink-kinematics/pink/discussions/66#discussioncomment-8224315)
 
 ## Global inverse kinematics
 
-Pink implements differential inverse kinematics, a first-order algorithm that converges to the closest optimum of its cost function. It is a **local** method that does not solve the more difficult problem of [global inverse kinematics](https://github.com/stephane-caron/pink/discussions/66). That is, it may converge to a global optimum, or to a local one stuck to some configuration limits. This behavior is illustrated in the [simple pendulum with configuration limit](https://github.com/stephane-caron/pink/blob/main/examples/simple_pendulum_configuration_limit.py) example.
+Pink implements differential inverse kinematics, a first-order algorithm that converges to the closest optimum of its cost function. It is a **local** method that does not solve the more difficult problem of [global inverse kinematics](https://github.com/pink-kinematics/pink/discussions/66). That is, it may converge to a global optimum, or to a local one stuck to some configuration limits. This behavior is illustrated in the [simple pendulum with configuration limit](https://github.com/pink-kinematics/pink/blob/main/examples/simple_pendulum_configuration_limit.py) example.
 
 ## How can I help?
 
-Install the library and use it! Report bugs in the [issue tracker](https://github.com/stephane-caron/pink/issues). If you are a developer with some robotics experience looking to hack on open source, check out the [contribution guidelines](CONTRIBUTING.md).
+Install the library and use it! Report bugs in the [issue tracker](https://github.com/pink-kinematics/pink/issues). If you are a developer with some robotics experience looking to hack on open source, check out the [contribution guidelines](CONTRIBUTING.md).
 
 ## Citation
 
@@ -188,7 +188,7 @@ If you use Pink in your scientific works, please cite it *e.g.* as follows:
   title = {{Pink: Python inverse kinematics based on Pinocchio}},
   author = {Caron, Stéphane and De Mont-Marin, Yann and Budhiraja, Rohan and Bang, Seung Hyeon and Domrachev, Ivan and Nedelchev, Simeon and Du, Peter and Escande, Adrien and Vaillant, Joris and Wingo, Bruce and Patapati, Santosh and San José Pro, Daniel and Marticorena Vidal, Nicolas Guillermo},
   license = {Apache-2.0},
-  url = {https://github.com/stephane-caron/pink},
+  url = {https://github.com/pink-kinematics/pink},
   version = {4.4.0},
   year = {2026}
 }

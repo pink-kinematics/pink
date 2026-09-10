@@ -38,9 +38,9 @@ keywords = ["inverse", "kinematics", "pinocchio"]
 [project.urls]
 Homepage = "https://stephane-caron.github.io/pink/"
 Documentation = "https://stephane-caron.github.io/pink/"
-Source = "https://github.com/stephane-caron/pink"
-Tracker = "https://github.com/stephane-caron/pink/issues"
-Changelog = "https://github.com/stephane-caron/pink/blob/main/CHANGELOG.md"
+Source = "https://github.com/pink-kinematics/pink"
+Tracker = "https://github.com/pink-kinematics/pink/issues"
+Changelog = "https://github.com/pink-kinematics/pink/blob/main/CHANGELOG.md"
 
 [tool.flit.module]
 name = "pink"

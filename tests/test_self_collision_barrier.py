@@ -94,7 +94,6 @@ class TestSelfCollisionBarrier(unittest.TestCase):
 
     def test_jacobians(self):
         """Test that shapes of jacobians in all barriers are correct."""
-
         barrier = SelfCollisionBarrier(
             n_collision_pairs=len(self.robot.collision_model.collisionPairs),
             d_min=0.02,
@@ -107,7 +106,6 @@ class TestSelfCollisionBarrier(unittest.TestCase):
 
     def test_positive_when_in_safety_zone(self):
         """Check that the barrier is positive when in the safety zone."""
-
         barrier = SelfCollisionBarrier(
             n_collision_pairs=len(self.robot.collision_model.collisionPairs),
             d_min=0.02,
@@ -121,7 +119,7 @@ class TestSelfCollisionBarrier(unittest.TestCase):
             n_collision_pairs=len(self.robot.collision_model.collisionPairs),
             d_min=0.02,
         )
-        # See https://github.com/stephane-caron/pink/pull/129 for an
+        # See https://github.com/pink-kinematics/pink/pull/129 for an
         # illustration of this test configuration
         q_test = np.zeros(self.robot.model.nq)
         q_test[1] = 2.0
@@ -138,7 +136,8 @@ class TestSelfCollisionBarrier(unittest.TestCase):
 
     def test_closest_collision_pairs(self):
         """Test that the closest collision pairs are considered if number of
-        collision pairs is less than actual number of collision pairs"""
+        collision pairs is less than actual number of collision pairs
+        """
         barrier = SelfCollisionBarrier(
             n_collision_pairs=5,
             d_min=0.02,

@@ -22,4 +22,4 @@ Finally, there is one question that has been open for a long time and is still a
 
 - Solve the question of numerical instability incurred by almost-unfeasible targets where LM damping does not kick in
 
-If any of those sound interesting, open an [issue](https://github.com/stephane-caron/pink/issues) and say you're on it!
+If any of those sound interesting, open an [issue](https://github.com/pink-kinematics/pink/issues) and say you're on it!

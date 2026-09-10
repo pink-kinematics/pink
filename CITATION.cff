@@ -3,7 +3,7 @@ message: "If you find this code helpful, please cite it as below."
 title: "Pink: Python inverse kinematics based on Pinocchio"
 version: 4.4.0
 date-released: 2026-09-09
-url: "https://github.com/stephane-caron/pink"
+url: "https://github.com/pink-kinematics/pink"
 license: "Apache-2.0"
 authors:
 - family-names: "Caron"

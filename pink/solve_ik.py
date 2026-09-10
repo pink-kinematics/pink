@@ -89,7 +89,7 @@ def __compute_qp_inequalities(
     Notes:
         We trim comparisons to infinity (equivalently: big floats) because some
         solvers don't support it. See for instance
-        https://github.com/stephane-caron/pink/issues/10.
+        https://github.com/pink-kinematics/pink/issues/10.
     """
     if limits is None:
         configuration_limit = configuration.model.configuration_limit
