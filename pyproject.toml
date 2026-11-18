@@ -81,6 +81,7 @@ generated-members = [
     "pin.computeCollisions",
     "pin.computeDistances",
     "pin.computeJointJacobians",
+    "pin.computeTotalMass",
     "pin.dDifference",
     "pin.difference",
     "pin.getFrameJacobian",
