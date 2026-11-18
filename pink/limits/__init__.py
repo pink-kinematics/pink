@@ -21,6 +21,7 @@ from .acceleration_limit import AccelerationLimit
 from .configuration_limit import ConfigurationLimit
 from .floating_base_velocity_limit import FloatingBaseVelocityLimit
 from .limit import Limit
+from .support_polygon_limit import SupportPolygonLimit
 from .velocity_limit import VelocityLimit
 
 __all__ = [
@@ -28,5 +29,6 @@ __all__ = [
     "ConfigurationLimit",
     "FloatingBaseVelocityLimit",
     "Limit",
+    "SupportPolygonLimit",
     "VelocityLimit",
 ]

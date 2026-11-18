@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Limit: Add `SupportPolygonLimit` to keep the center of mass inside a support polygon (static stability)
+
 ## [4.4.0] - 2026-09-09
 
 ### Added

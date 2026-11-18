@@ -38,6 +38,10 @@ class InvalidCollisionPairs(PinkError):
     """IF the number of collision pairs is invalid."""
 
 
+class LimitDefinitionError(PinkError):
+    """Exception raised when a limit definition is ill-formed."""
+
+
 class NegativeMinimumDistance(PinkError):
     """If the minimum distance in body spherical barrier is negative."""
 
